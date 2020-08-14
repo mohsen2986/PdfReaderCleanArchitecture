@@ -1,0 +1,3 @@
+rootProject.name='Pdf reader clean architecture'
+include ':app'
+include ':core'
