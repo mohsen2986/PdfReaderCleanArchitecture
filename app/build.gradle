@@ -11,7 +11,7 @@ android {
     }
     defaultConfig {
         applicationId "com.pdfreadercleanarchitecture"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -39,5 +39,12 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$app_compat_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "com.google.android.material:material:$android_material_version"
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+
+    implementation 'androidx.room:room-ktx:2.2.5'
+    kapt "androidx.room:room-compiler:2.2.5"
 
 }
