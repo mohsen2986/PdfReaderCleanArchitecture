@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/ic_library"
+        android:title="@string/menu_library"/>
+    <item
+        android:id="@+id/nav_reader"
+        android:icon="@drawable/ic_reader"
+        android:title="@string/menu_reader"/>
+  </group>
+
+</menu>

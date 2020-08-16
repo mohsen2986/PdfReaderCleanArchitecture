@@ -3,7 +3,7 @@ package com.pdfreadercleanarchitecture.framework
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 
-class PdfReaderViewModel(
+open class PdfReaderViewModel(
     application: Application,
     protected val interactors: Interactors
 ):AndroidViewModel(application){
