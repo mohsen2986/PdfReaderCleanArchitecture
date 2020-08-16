@@ -6,6 +6,6 @@ import com.example.core.domain.Document
 class GetOpenDocument(
     private val documentRepository: DocumentRepository
 ){
-    suspend operator fun invoke(document: Document) =
-        documentRepository.getOpenDocument(document)
+     operator fun invoke() =
+        documentRepository.getOpenDocument()
 }

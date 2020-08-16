@@ -11,6 +11,7 @@ import com.example.core.domain.Document
 import com.google.android.material.navigation.NavigationView
 import com.pdfreadercleanarchitecture.R
 import com.pdfreadercleanarchitecture.presentation.fragment.library.LibraryFragment
+import com.pdfreadercleanarchitecture.presentation.fragment.reader.ReaderFragment
 import com.pdfreadercleanarchitecture.presentation.util.MainActivityDelegate
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -66,8 +67,9 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
     }
 
     override fun openDocument(document: Document) {
-//        nav_view.menu.findItem(R.id.nav_reader).isChecked = true
-//        supportFragmentManager.beginTransaction()
-//            .replace(R.id.content , Reader)
+        nav_view.menu.findItem(R.id.nav_reader).isChecked = true
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.content, ReaderFragment.newInstance(document))
+            .commit()
     }
 }

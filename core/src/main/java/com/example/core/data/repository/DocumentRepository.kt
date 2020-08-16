@@ -20,6 +20,6 @@ class DocumentRepository(
     fun setOpenDocument(document: Document) =
         openDocumentDataSource.setOpenDocument(document)
 
-    fun getOpenDocument(document: Document) =
+    fun getOpenDocument() =
         openDocumentDataSource.getOpenDocument()
 }
